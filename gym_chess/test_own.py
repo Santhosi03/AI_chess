@@ -5,7 +5,7 @@ env = ChessEnvV2() # or ChessEnvV2
 
 # current state
 state = env.state
-
+print(state,type(state))
 # select a move and convert it into an action
 moves = env.get_possible_moves(state=state, player="WHITE", attack=False)
 move = random.choice(moves)
